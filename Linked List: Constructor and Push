@@ -1,0 +1,12 @@
+function Node(value, next) {
+  this.value = value;
+  this.next = next ? next : null;
+}
+
+function linkedlist() {
+  this.head = null; 
+}
+
+linkedlist.prototype.push = function(val) {
+  this.head = new Node(val, this.head)
+}
