@@ -10,3 +10,11 @@ function linkedlist() {
 linkedlist.prototype.push = function(val) {
   this.head = new Node(val, this.head)
 }
+
+[comment]: <> ( linkedList.prototype.push = function(value) {
+var newNode = new Node(value);
+newNode.next = this.head;
+this.head = mewNode;
+} )
+
+LinkedList.prototype.display = function (){
